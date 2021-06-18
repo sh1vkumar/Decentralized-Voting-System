@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Election Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/card.css" rel="stylesheet">
+  </head>
+  <section>
+    <h1 class="header">“Voting is not only our right - it is our power.”</h1>
+    <h1 class="timer" id="timer"></h1>
+    <div class="card">
+      <div class="card-area"></div>
+      <div id="image1" class="card-image"></div>
+      <div class="card-text">
+        <h2>Candidate 1</h2>
+        <h3>Party X</h3>
+      </div>
+      <div class="card-stats" id="result1">
+        <!-- <input type="button" class="button" value="Vote"> -->
+        <!-- <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">read</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">views</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">comments</div>
+        </div> -->
+      </div>
+    </div>
+    <div class="card">
+      <div id="image2" class="card-image"></div>
+      <div class="card-text">
+        <h2>Candidate 2</h2>
+        <h3>Party Y</h3>
+      </div>
+      <div class="card-stats" id="result2">
+        <!-- <input type="button" class="button" value="Vote"> -->
+        <!-- <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">read</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">views</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">comments</div>
+        </div> -->
+      </div>
+    </div>
+    <div class="card">
+      <div id="image3" class="card-image"></div>
+      <div class="card-text">
+        <h2>Candidate 3</h2>
+        <h3>party z</h3>
+      </div>
+      <div class="card-stats" id="result3">
+       <!-- <input type="button" class="button" value="Vote"> -->
+        <!-- <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">read</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">views</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">comments</div>
+        </div> -->
+      </div>
+    </div>
+    <form onSubmit="App.castVote(); return false;">
+      <div class="form-div">
+        <label for="candidatesSelect"><b>Select Candidate  :</b></label>&nbsp;
+        <select class="form" id="candidatesSelect">
+        </select>
+        <div class="buttonDiv"><button type="submit" class="button" id="open-popup-btn">Vote</button></div>
+      </div>
+    </form>
+    <p id="accountAddress" class="text-center"></p>
+  </section>
+  
+  <div class="popup center" id="popup">
+    <div class="icon">
+      <i class="fa fa-check"></i>
+    </div>
+    <div class="title">
+      Success!!
+    </div>
+    <div class="description">
+      You have sucessfully voted.<br> Thank you!
+    </div>
+    <div class="dismiss-btn">
+      <button id="dismiss-popup-btn">
+        Dismiss
+      </button>
+    </div>
+  </div>
+  <div class="center">
+    <!-- <button id="open-popup-btn">
+      Open Popup
+    </button> -->
+  </div>
+  
+    <!-- <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Election Results</h1>
+          <hr/>
+          <br/>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" style="display: none;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Votes</th>
+                </tr>
+              </thead>
+              <tbody id="candidatesResults">
+              </tbody>
+            </table>
+            <hr/>
+            <form onSubmit="App.castVote(); return false;">
+              <div class="form-group">
+                <label for="candidatesSelect">Select Candidate</label>
+                <select class="form-control" id="candidatesSelect">
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Vote</button>
+              <hr />
+            </form>
+            <p id="accountAddress" class="text-center"></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

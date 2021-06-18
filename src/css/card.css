@@ -1,0 +1,304 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+   width: 98%;
+   height: 100%;
+   background-image: url(https://www.oogazone.com/wp-content/uploads/2018/10/best-crowd-of-cheering-silhouettes-isolated-over-library.jpg);
+   background-size: cover;
+   float: left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.section{
+    padding: 10rem 0;
+    background-color: #fff;
+}
+
+.header{
+    color: #45e19f;
+    text-transform: uppercase;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+    text-decoration: solid;
+    text-decoration: underline;
+    word-spacing: 12px;
+    position: relative;
+    font-style: italic;
+}
+
+.timer{
+    color: red;
+    text-transform: uppercase;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration: solid;
+    word-spacing: 7px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    /* position: relative; */
+}
+.card {
+    color: #53868B;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 40px 190px 210px 50px;
+    grid-template-areas: "area" "image" "text" "stats";
+  
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    float: left;
+}
+.card-area{
+    grid-area: area;
+}
+.card-image {
+  grid-area: image;
+}
+.card-text {
+  grid-area: text;
+}
+.card-stats {
+  grid-area: stats; 
+}
+.card-area{
+    padding-top: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    text-decoration: solid;
+    font-size: 1.2rem;
+}
+.card-image {
+  grid-area: image;
+  border-radius: 30px;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 90px;
+}
+.card-text {
+  padding-top: 50px;
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text h2 {
+  color: #53868B;
+  margin-top:50px;
+  font-size:20px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+}
+.card-text h3 {
+    color: #53868B;
+    margin-top:10px;
+    font-size:20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+  }
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  align-items: center;
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 100px;
+  }
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.form-div{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    text-decoration:solid ;
+    color:#45e19f;
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+.form{
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    text-decoration:solid ;
+    color:black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.buttonDiv{
+    margin-top: 20px;
+    align-items: center;
+}
+#image1{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fuser-icon-male-avatar-business-suit-vector-flat-design-businessman-man-internet-rounded-shape-web-mobile-element-profile-99280834.jpg&f=1&nofb=1");
+    
+}
+#image2{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn5.vectorstock.com%2Fi%2F1000x1000%2F72%2F74%2Ffemale-avatar-profile-icon-round-woman-face-vector-18307274.jpg&f=1&nofb=1");
+    
+}
+#image3{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fuser-icon-male-avatar-business-suit-vector-flat-design-businessman-man-internet-rounded-shape-web-mobile-element-profile-99280834.jpg&f=1&nofb=1");
+    
+}
+
+#accountAddress{
+  color: black;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.4em;
+  background-color: lightblue;
+  width: 100%;
+  border-radius: 50px;
+}
+#result1{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color:white;
+  background: tomato;
+  font-weight: bolder;
+}
+#result2{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color:white;
+  background: tomato;
+  font-weight: bolder;
+}
+#result3{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color:white;
+  background: tomato;
+  font-weight: bolder;
+}
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.popup {
+  width:350px;
+  height:280px;
+  padding:30px 20px;
+  background:#f5f5f5;
+  border-radius:10px;
+  box-sizing:border-box;
+  z-index:2;
+  text-align:center;
+  opacity:0;
+  top:-200%;
+  transform:translate(-50%,-50%) scale(0.4);
+  transition: opacity 300ms ease-in-out,
+              top 1000ms ease-in-out,
+              transform 1000ms ease-in-out;
+}
+.popup.active {
+  opacity:1;
+  top:50%;
+  transform:translate(-50%,-50%) scale(1.3);
+  transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+.popup .icon {
+  margin:5px 0px;
+  width:50px;
+  height:50px;
+  border:2px solid #34f234;
+  text-align:center;
+  display:inline-block;
+  border-radius:50%;
+  line-height:60px;
+}
+.popup .icon i.fa {
+  font-size:30px;
+  color:#34f234;
+} 
+.popup .title {
+  margin:5px 0px;
+  font-size:30px;
+  font-weight:600;
+}
+.popup .description {
+  color:#222;
+  font-size:15px;
+  padding:5px;
+}
+.popup .dismiss-btn {
+  margin-top:15px;
+}
+.popup .dismiss-btn button {
+  padding:10px 20px;
+  background:#111;
+  color:#f5f5f5;
+  border:2px solid #111;
+  font-size:16px;
+  font-weight:600;
+  outline:none;
+  border-radius:10px;
+  cursor:pointer;
+  transition: all 300ms ease-in-out;
+}
+.popup .dismiss-btn button:hover {
+  color:#111;
+  background:#f5f5f5;
+}
+.popup > div {
+  position:relative;
+  top:10px;
+  opacity:0;
+}
+.popup.active > div {
+  top:0px;
+  opacity:1;
+}
+.popup.active .icon {
+  transition: all 300ms ease-in-out 250ms;
+}
+.popup.active .title {
+  transition: all 300ms ease-in-out 300ms;
+}
+.popup.active .description {
+  transition: all 300ms ease-in-out 350ms;
+}
+.popup.active .dismiss-btn {
+  transition: all 300ms ease-in-out 400ms;
+}
